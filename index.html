@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Codificador / Decodificador – ONE Challenge 01</title>
+</head>
+<body>
+    <header>
+        <img class="logo" src="logoAlura.svg" alt="Logo da Alura">
+    </header>
+
+    <main class="container">
+        <section class="criptografia">
+            <textarea class="texto-entrada" placeholder="Digite seu texto"></textarea>
+    
+            <div class="info">
+                <img src="exclamacao.png" alt="!">
+                <p>Apenas letras minúsculas e sem acento.</p>
+            </div>
+    
+            <div class="botoes">
+                <button class="btn botao-encriptar" onclick="btnEncriptar()">Criptografar</button>
+                <button class="btn botao-decriptar" onclick="btnDecriptar()">Descriptografar</button>
+            </div>
+        </section>
+    
+        <section>
+            <div class="retangulo"></div>
+            <img class="boneco" src="boneco.svg" alt="Desenho de uma pessoa com uma lupa olhado um diamante.">
+            <div class="aviso">
+                <h2>Nenhuma mensagem encontrada</h2>
+                <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
+            </div>
+            <div class="mensagem">
+                <textarea class="texto-saida" id="texto-saida" cols="30" rows="10" readonly></textarea>
+                <button class="btn botao-copiar" onclick="btnCopiar()">Copiar</button>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="copyright">
+            <p>&#169; 2023 – Desenvolvido por Berger Lima</p>
+        </div>
+
+        <div class="links">
+            <a href="https://github.com/bergerlima" target="_blank"><i class="fa fa-github"></i></a>
+            <a href="https://linkedin.com/in/bergerlima" target="_blank"><i class="fa fa-linkedin-square"></i></a>
+        </div>
+    </footer>
+
+    <script src="decoder.js"></script>
+</body>
+</html>
